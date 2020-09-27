@@ -28,6 +28,7 @@ public class UserControllerTest {
 
     @Before
     public void setUp() {
+
         userController = new UserController();
         TestUtils.injectObjects(userController, "userRepository", userRepository);
         TestUtils.injectObjects(userController, "cartRepository", cartRepository);
@@ -109,6 +110,13 @@ public class UserControllerTest {
     }
 
     @Test
+    public void find_user_by_id_not_found() {
+        final ResponseEntity<User> response = userController.findById(33L);
+        assertNotNull(response);
+        assertEquals(404, response.getStatusCodeValue());
+    }
+
+    @Test
     public void find_user_by_id_happy_path() {
         final ResponseEntity<User> response = userController.findById(0L);
         assertNotNull(response);
@@ -116,14 +124,6 @@ public class UserControllerTest {
         User u = response.getBody();
         assertNotNull(u);
         assertEquals(0, u.getId());
-        ;
-    }
-
-    @Test
-    public void find_user_by_id_not_found() {
-        final ResponseEntity<User> response = userController.findById(33L);
-        assertNotNull(response);
-        assertEquals(404, response.getStatusCodeValue());
     }
 
 }
