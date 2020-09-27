@@ -7,6 +7,8 @@ import it.davidenastri.ecommerce.model.persistence.repositories.CartRepository;
 import it.davidenastri.ecommerce.model.persistence.repositories.ItemRepository;
 import it.davidenastri.ecommerce.model.persistence.repositories.UserRepository;
 import it.davidenastri.ecommerce.model.requests.ModifyCartRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +23,8 @@ import java.util.stream.IntStream;
 @RestController
 @RequestMapping("/api/cart")
 public class CartController {
+
+	private static final Logger log = LoggerFactory.getLogger(CartController.class);
 
 	@Autowired
 	private UserRepository userRepository;
@@ -45,6 +49,7 @@ public class CartController {
 		IntStream.range(0, request.getQuantity())
 				.forEach(i -> cart.addItem(item.get()));
 		cartRepository.save(cart);
+		log.info("Item successfully added to cart");
 		return ResponseEntity.ok(cart);
 	}
 
