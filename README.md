@@ -1,3 +1,10 @@
+[![build](https://github.com/ltpitt/java-spring-jwt-ecommerce/workflows/build/badge.svg)](https://github.com/ltpitt/java-spring-jwt-ecommerce/actions)
+[![GitHub Issues](https://img.shields.io/github/issues-raw/ltpitt/java-spring-jwt-ecommerce)](https://github.com/ltpitt/java-spring-jwt-ecommerce/issues)
+[![Total Commits](https://img.shields.io/github/last-commit/ltpitt/java-spring-jwt-ecommerce)](https://github.com/ltpitt/java-spring-jwt-ecommerce/commits)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/4w/ltpitt/java-spring-jwt-ecommerce?foo=bar)](https://github.com/ltpitt/java-spring-jwt-ecommerce/commits)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ltpitt/java-spring-jwt-ecommerce/blob/master/LICENSE)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+
 # eCommerce Application
 
 In this project, you'll have an opportunity to demonstrate the security and DevOps skills that you learned in this lesson by completing an eCommerce application. You'll start with a template for the complete application, and your goal will be to take this template and add proper authentication and authorization controls so users can only access their data, and that data can only be accessed in a secure way. 
