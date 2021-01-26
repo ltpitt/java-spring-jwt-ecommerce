@@ -1,4 +1,5 @@
 [![build](https://github.com/ltpitt/java-spring-jwt-ecommerce/workflows/build/badge.svg)](https://github.com/ltpitt/java-spring-jwt-ecommerce/actions)
+[![CodeQL](https://github.com/ltpitt/java-spring-jwt-ecommerce/workflows/CodeQL/badge.svg)](https://github.com/ltpitt/java-spring-jwt-ecommerce/actions?query=workflow%3ACodeQL)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/ltpitt/java-spring-jwt-ecommerce)](https://github.com/ltpitt/java-spring-jwt-ecommerce/issues)
 [![Total Commits](https://img.shields.io/github/last-commit/ltpitt/java-spring-jwt-ecommerce)](https://github.com/ltpitt/java-spring-jwt-ecommerce/commits)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/4w/ltpitt/java-spring-jwt-ecommerce?foo=bar)](https://github.com/ltpitt/java-spring-jwt-ecommerce/commits)
